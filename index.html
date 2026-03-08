@@ -2,24 +2,25 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Info Hub - Acasă</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Acasă</a> | 
-        <a href="pages/biblioteca.html">Bibliotecă</a> | 
-        <a href="pages/cantina.html">Cantină</a> |
-        <a href="https://google.com">Link Absolut (Google)</a> |
-        <a href="pages/biblioteca.html#orar">Sari la Orar (Fragment)</a>
+        <a href="index.html">Acasă</a>
+        <a href="pagini/biblioteca.html">Bibliotecă</a>
+        <a href="pagini/cantina.html">Cantină</a>
+        <a href="https://google.com">Link Absolut</a>
+        <a href="pagini/biblioteca.html#orar">Sari la Orar</a>
     </nav>
 
     <h1>Campus Info Hub</h1>
-    <p>Bun venit! Mai jos găsești resursele disponibile în campus încărcate din JSON.</p>
+    <p>Explorează resursele disponibile în campus. Datele sunt încărcate dinamic via JSON.</p>
     
     <div class="controale">
-        <button onclick="incarcaToate()">Toate</button>
-        <button onclick="afiseazaDoarStudiu()">Doar Studiu</button>
+        <button onclick="incarcaToate()">Toate Resursele</button>
+        <button onclick="afiseazaDoarStudiu()">Doar Locuri de Studiu</button>
     </div>
 
     <div id="lista-resurse">

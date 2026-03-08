@@ -4,14 +4,14 @@
     "type": "Studiu",
     "location": "Corp A, Etaj 2",
     "program": "08:00 - 20:00",
-    "tags": ["cărți", "liniște", "wifi"]
+    "tags": ["carti", "wifi", "liniste"]
   },
   {
     "name": "Cantina Studențească",
     "type": "Mâncare",
     "location": "Lângă Căminul C1",
     "program": "11:00 - 18:00",
-    "tags": ["mâncare", "social", "ieftin"]
+    "tags": ["mancare", "social"]
   },
   {
     "name": "Sala de Lectură",

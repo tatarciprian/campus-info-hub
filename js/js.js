@@ -1,13 +1,12 @@
 let dateResurse = [];
 
-// Funcția de încărcare date (Fetch) - Cerința 7
 async function incarcaDate() {
     try {
         const raspuns = await fetch('./data/resources.json');
         dateResurse = await raspuns.json();
         rendereaza(dateResurse);
     } catch (eroare) {
-        console.error("Eroare la încărcarea datelor:", eroare);
+        console.error("Eroare:", eroare);
     }
 }
 
@@ -17,22 +16,20 @@ function rendereaza(date) {
 
     date.forEach(item => {
         const card = document.createElement('div');
-        card.style.border = "1px solid #ccc";
-        card.style.margin = "10px 0";
-        card.style.padding = "10px";
+        card.className = "card";
         
         card.innerHTML = `
             <h3>${item.name}</h3>
-            <p><strong>Tip:</strong> ${item.type}</p>
-            <p><strong>Locație:</strong> ${item.location}</p>
-            <p><strong>Orar:</strong> ${item.program}</p>
-            <p><small>Tags: ${item.tags.join(', ')}</small></p>
+            <p><strong>📍 Locație:</strong> ${item.location}</p>
+            <p><strong>🕒 Program:</strong> ${item.program}</p>
+            <div style="margin-top:10px;">
+                ${item.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
+            </div>
         `;
         container.appendChild(card);
     });
 }
 
-// Filtrare (Cerința 7b)
 function afiseazaDoarStudiu() {
     const filtrate = dateResurse.filter(r => r.type === "Studiu");
     rendereaza(filtrate);
