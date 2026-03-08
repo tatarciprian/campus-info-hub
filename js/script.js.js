@@ -2,6 +2,7 @@ let dateResurse = [];
 
 async function incarcaDate() {
     try {
+        // Cauta in folderul 'data' fisierul 'resources.json'
         const raspuns = await fetch('./data/resources.json');
         dateResurse = await raspuns.json();
         rendereaza(dateResurse);
