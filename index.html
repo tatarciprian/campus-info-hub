@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Info Hub - Acasă</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Acasă</a> | 
+        <a href="pages/biblioteca.html">Bibliotecă</a> | 
+        <a href="pages/cantina.html">Cantină</a> |
+        <a href="https://google.com">Link Absolut (Google)</a> |
+        <a href="pages/biblioteca.html#orar">Sari la Orar (Fragment)</a>
+    </nav>
+
+    <h1>Campus Info Hub</h1>
+    <p>Bun venit! Mai jos găsești resursele disponibile în campus încărcate din JSON.</p>
+    
+    <div class="controale">
+        <button onclick="incarcaToate()">Toate</button>
+        <button onclick="afiseazaDoarStudiu()">Doar Studiu</button>
+    </div>
+
+    <div id="lista-resurse">
+        </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
